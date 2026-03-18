@@ -1,5 +1,6 @@
 import { formatInput } from './utils/format.js'
 import { hasInput, startsWith0x } from './utils/validate.js'
+import { createResult } from './utils/result.js'
 
 function run() {
   console.log("Starting app...")
@@ -16,9 +17,7 @@ function run() {
     process.exit(1)
   }
 
-  const result = {
-    address
-  }
+  const result = createResult(address)
 
   console.log("==== WALLET INFO ====")
   console.log(JSON.stringify(result, null, 2))
