@@ -8,3 +8,6 @@ const address = format(process.argv[2] || '')
 if (!address) {
   console.log("Please provide address")
 }
+import { RPC } from './config.js'
+
+console.log("RPC:", RPC)
