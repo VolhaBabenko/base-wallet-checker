@@ -1,3 +1,3 @@
-import { formatInput } from './utils/format.js'
-
-const address = formatInput(process.argv[2] || '')
+export function formatInput(value: string): string {
+  return value.trim()
+}
