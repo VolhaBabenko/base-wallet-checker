@@ -14,3 +14,5 @@ node src/index.js 0x123...
 ## TODO
 - fetch real balance
 - integrate viem
+## Author
+YourName
