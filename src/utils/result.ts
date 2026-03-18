@@ -1,5 +1,6 @@
 export function createResult(address: string) {
   return {
-    address
+    address,
+    chain: 'Base'
   }
 }
