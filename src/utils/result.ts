@@ -1,6 +1,7 @@
-export function createResult(address: string) {
+export function createResult(address: string, rpc: string) {
   return {
     address,
-    chain: 'Base'
+    chain: 'Base',
+    rpc
   }
 }
