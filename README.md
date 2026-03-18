@@ -6,3 +6,8 @@
 ## Usage
 
 node src/index.js 0x123...
+## Example Output
+
+{
+  "address": "0x123..."
+}
