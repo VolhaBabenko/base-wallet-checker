@@ -1,11 +1,12 @@
 import { formatInput } from './utils/format.js'
+import { hasInput } from './utils/validate.js'
 
 function run() {
   console.log("Starting app...")
 
   const address = formatInput(process.argv[2] || '')
 
-  if (!address) {
+  if (!hasInput(address)) {
     console.log("Please provide address")
     process.exit(1)
   }
