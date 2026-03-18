@@ -5,3 +5,6 @@ console.log("Wallet:", address)
 import { format } from './utils/format.js'
 
 const address = format(process.argv[2] || '')
+if (!address) {
+  console.log("Please provide address")
+}
