@@ -1,5 +1,3 @@
-{
-  "name": "base-wallet-checker-lite",
-  "version": "1.0.0",
-  "type": "module"
+"scripts": {
+  "start": "node src/index.js"
 }
