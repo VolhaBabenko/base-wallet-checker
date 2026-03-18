@@ -1,3 +1,4 @@
+console.log("Starting app...")
 console.log("Base Wallet Checker Lite")
 const address = process.argv[2]
 
