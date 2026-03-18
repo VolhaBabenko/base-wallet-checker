@@ -3,3 +3,6 @@
 - Check wallet balance on Base
 - CLI usage
 - JSON output
+## Usage
+
+node src/index.js 0x123...
