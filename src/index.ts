@@ -1,9 +1,9 @@
-import { format } from './utils/format.js'
+import { formatInput } from './utils/format.js'
 
 function run() {
   console.log("Starting app...")
 
-  const address = format(process.argv[2] || '')
+  const address = formatInput(process.argv[2] || '')
 
   if (!address) {
     console.log("Please provide address")
@@ -14,6 +14,7 @@ function run() {
     address
   }
 
+  console.log("==== WALLET INFO ====")
   console.log(JSON.stringify(result, null, 2))
 }
 
