@@ -2,6 +2,7 @@ import { RPC } from './config.js'
 import { formatInput } from './utils/format.js'
 import { hasInput, startsWith0x } from './utils/validate.js'
 import { createResult } from './utils/result.js'
+import { printHeader } from './utils/output.js'
 
 function run() {
   console.log("Starting app...")
@@ -20,7 +21,7 @@ function run() {
 
   const result = createResult(address, RPC)
 
-  console.log("==== WALLET INFO ====")
+  printHeader()
   console.log(JSON.stringify(result, null, 2))
 }
 
